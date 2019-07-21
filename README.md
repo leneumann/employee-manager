@@ -42,3 +42,35 @@ sqlparse version: 0.3.0
 static3 version: 0.7.0
 ````
 ## How to execute
+Get the latest version from repository, in the root folder from the downloaded code, execute:
+
+
+Create a python environment:
+```sh
+$ python -m venv venv
+```
+Activate the Python environment:
+```sh
+$ .\venv\Scripts\activate
+```
+Install all the dependencies:
+```sh
+$ pip install -r requirements.txt
+```
+Make the migrations of the models
+```sh
+$ python manage.py makemigrations
+```
+Make the migrate to create the entities in the database (SQLite)
+```sh
+$ python manage.py migrate
+```
+Create the superuser to manage the admin control panel
+```sh
+$ python manage.py createsuperuser
+```
+Run the server, check if the port 8000 is available, if not use the port 8080.
+```sh
+$ python manage.py runserver
+```
+Your app should now be running on [localhost:8000](http://localhost:8000/)
