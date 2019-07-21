@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['employeemanager-leneumann.herokuapp.com']
 
 
 # Application definition
@@ -44,7 +44,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    'employees',
+    'employee',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

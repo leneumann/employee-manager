@@ -18,7 +18,7 @@ from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
 
-from employees.api.viewsets import EmployeeViewSet
+from employee.api.viewsets import EmployeeViewSet
 
 router = routers.DefaultRouter()
 router.register(r'employee', EmployeeViewSet)
