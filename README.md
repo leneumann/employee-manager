@@ -1,6 +1,6 @@
 # Employee Manager Application
 
-Simple Django Application to manage employees, it has an API for integration in Django Framework and admin module to manage employee informations.
+Simple Django Application to manage employees, it has an API for integration in Django Rest Framework and Django Control Panel to manage employee informations.
 
 ## Project Structure:
 ````
