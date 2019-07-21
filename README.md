@@ -47,30 +47,30 @@ Get the latest version from repository, in the root folder from the downloaded c
 
 Create a python environment:
 ```sh
-$ python -m venv venv
+python -m venv venv
 ```
 Activate the Python environment:
 ```sh
-$ .\venv\Scripts\activate
+.\venv\Scripts\activate
 ```
 Install all the dependencies:
 ```sh
-$ pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 Make the migrations of the models
 ```sh
-$ python manage.py makemigrations
+python manage.py makemigrations
 ```
 Make the migrate to create the entities in the database (SQLite)
 ```sh
-$ python manage.py migrate
+python manage.py migrate
 ```
 Create the superuser to manage the admin control panel
 ```sh
-$ python manage.py createsuperuser
+python manage.py createsuperuser
 ```
 Run the server, check if the port 8000 is available, if not use the port 8080.
 ```sh
-$ python manage.py runserver
+python manage.py runserver
 ```
 Your app should now be running on [localhost:8000](http://localhost:8000/)
